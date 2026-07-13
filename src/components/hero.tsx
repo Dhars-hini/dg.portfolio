@@ -217,9 +217,8 @@ export function Hero() {
               {/* Photo — fully blended into background */}
               <div className="relative h-56 w-56 sm:h-72 sm:w-72 lg:h-[28rem] lg:w-[28rem]"
                 style={{
-                  WebkitMaskImage: "radial-gradient(ellipse 70% 75% at 50% 45%, black 30%, rgba(0,0,0,0.6) 55%, transparent 75%)",
-                  maskImage: "radial-gradient(ellipse 70% 75% at 50% 45%, black 30%, rgba(0,0,0,0.6) 55%, transparent 75%)",
-                  isolation: "isolate",
+                  WebkitMaskImage: "radial-gradient(ellipse 65% 70% at 50% 45%, black 25%, rgba(0,0,0,0.85) 40%, rgba(0,0,0,0.4) 60%, transparent 75%)",
+                  maskImage: "radial-gradient(ellipse 65% 70% at 50% 45%, black 25%, rgba(0,0,0,0.85) 40%, rgba(0,0,0,0.4) 60%, transparent 75%)",
                 }}
               >
                 <Image
@@ -231,12 +230,6 @@ export function Hero() {
                   sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 448px"
                   onError={(e) => {
                     (e.target as HTMLImageElement).style.display = "none";
-                  }}
-                />
-                <div
-                  className="absolute inset-0 pointer-events-none"
-                  style={{
-                    background: "radial-gradient(ellipse 85% 90% at 50% 45%, transparent 40%, var(--background) 78%)",
                   }}
                 />
               </div>
