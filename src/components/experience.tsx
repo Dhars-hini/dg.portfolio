@@ -70,9 +70,9 @@ export function Experience() {
                 >
                   {/* Company logo */}
                   <CompanyLogo company={role.company} />
-                  <div className="min-w-0">
-                    <h3 className="font-display text-lg font-semibold">{role.company}</h3>
-                    <div className="mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-1">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="font-display text-base font-semibold sm:text-lg">{role.company}</h3>
+                    <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1">
                       <span className="flex items-center gap-1.5 font-mono text-xs text-muted">
                         <Briefcase size={11} /> {role.role}
                       </span>

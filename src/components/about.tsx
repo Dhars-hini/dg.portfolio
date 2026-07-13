@@ -13,7 +13,7 @@ export function About() {
           description="A software engineer in the making — driven by curiosity, shaped by challenges."
         />
 
-        <div className="grid gap-12 md:grid-cols-[300px_1fr] lg:gap-20">
+        <div className="grid gap-10 md:grid-cols-[280px_1fr] lg:gap-20">
 
           {/* ── LEFT: Photo + quick facts ─────────────────────────────── */}
           <Reveal>

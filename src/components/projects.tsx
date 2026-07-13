@@ -183,8 +183,8 @@ export function Projects() {
           description="Real projects built to solve real problems — spanning machine learning, full-stack development, and applied AI."
         />
 
-        {/* Row 1 — 3 cards */}
-        <div className="grid gap-6 md:grid-cols-3">
+        {/* Row 1 — 1 col mobile, 3 col desktop */}
+        <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
           {projects.slice(0, 3).map((project, i) => (
             <Reveal key={project.id} delay={Math.min(i * 0.05, 0.25)}>
               <ProjectCard
@@ -196,8 +196,8 @@ export function Projects() {
           ))}
         </div>
 
-        {/* Row 2 — 2 cards centered */}
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
+        {/* Row 2 — 1 col mobile, 2 cards centered desktop */}
+        <div className="mt-5 grid gap-5 sm:grid-cols-2 md:grid-cols-3">
           <div className="hidden md:block" />
           {projects.slice(3, 5).map((project, i) => (
             <Reveal key={project.id} delay={Math.min((i + 3) * 0.05, 0.25)}>
