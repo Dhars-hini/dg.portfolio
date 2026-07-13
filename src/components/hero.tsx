@@ -214,20 +214,15 @@ export function Hero() {
             className="order-1 flex justify-center lg:order-2 lg:justify-end"
           >
             <div className="relative">
-              {/* Photo — fully blended into background */}
-              <div className="relative h-56 w-56 sm:h-72 sm:w-72 lg:h-[28rem] lg:w-[28rem]"
-                style={{
-                  WebkitMaskImage: "radial-gradient(ellipse 65% 70% at 50% 45%, black 25%, rgba(0,0,0,0.85) 40%, rgba(0,0,0,0.4) 60%, transparent 75%)",
-                  maskImage: "radial-gradient(ellipse 65% 70% at 50% 45%, black 25%, rgba(0,0,0,0.85) 40%, rgba(0,0,0,0.4) 60%, transparent 75%)",
-                }}
-              >
+              {/* Photo — circle frame with border */}
+              <div className="relative h-56 w-56 overflow-hidden rounded-full border-2 border-primary/30 bg-surface shadow-xl sm:h-72 sm:w-72 lg:h-[22rem] lg:w-[22rem]">
                 <Image
                   src={personal.photo}
                   alt="Dharshini Ganesh — Software Engineer"
                   fill
                   priority
                   className="object-cover object-top"
-                  sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 448px"
+                  sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 352px"
                   onError={(e) => {
                     (e.target as HTMLImageElement).style.display = "none";
                   }}
