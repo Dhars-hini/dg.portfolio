@@ -139,7 +139,7 @@ export const skills: SkillCategory[] = [
     category: "Cloud & DevOps",
     icon: "Cloud",
     description: "Cloud infrastructure and deployment",
-    skills: ["AWS EC2", "AWS S3", "AWS RDS", "IAM", "Git", "GitHub"],
+    skills: ["AWS EC2", "AWS S3", "AWS RDS"],
   },
   {
     category: "AI & Machine Learning",
@@ -151,7 +151,7 @@ export const skills: SkillCategory[] = [
     category: "Database",
     icon: "Database",
     description: "Relational and document data stores",
-    skills: ["MySQL", "MongoDB", "PostgreSQL", "Firebase"],
+    skills: ["MySQL", "MongoDB", "PostgreSQL"],
   },
   {
     category: "Data Analytics",
@@ -163,7 +163,7 @@ export const skills: SkillCategory[] = [
     category: "Tools & Platforms",
     icon: "Wrench",
     description: "Development environment and productivity tools",
-    skills: ["VS Code", "Postman", "GitHub", "Render"],
+    skills: ["VS Code", "Postman", "GitHub"],
   },
 ];
 
